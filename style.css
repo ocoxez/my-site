@@ -1,0 +1,426 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Kokoro-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/65133c87dabf3a1a0d271ffa/fonts/kokoro-regular.ttf")
+    format("truetype");
+}
+:root {
+  --x: rgba(46, 46, 46, 1);
+}
+
+.slide {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.slide .div {
+  background-color: #ffffff;
+  width: 1920px;
+  height: 3754px;
+  position: relative;
+}
+
+.slide .overlap-group {
+  height: 1145px;
+  top: 0;
+  position: absolute;
+  width: 1920px;
+  left: 0;
+}
+
+.slide .rectangle {
+  position: absolute;
+  width: 1920px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+}
+
+.slide .element {
+  top: 50px;
+  left: 65px;
+  position: absolute;
+  width: 460px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.slide .view {
+  position: absolute;
+  width: 1001px;
+  height: 53px;
+  top: 50px;
+  left: 844px;
+  text-decoration: none;
+}
+
+.slide .text-wrapper {
+  width: 181px;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  font-size: 40px;
+  line-height: normal;
+  position: absolute;
+  font-family: "Kokoro-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.slide .text-wrapper-2 {
+  width: 172px;
+  top: 0;
+  left: 405px;
+  color: #ffffff;
+  font-size: 40px;
+  line-height: normal;
+  position: absolute;
+  font-family: "Kokoro-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.slide .text-wrapper-3 {
+  width: 194px;
+  top: 0;
+  left: 801px;
+  color: #ffffff;
+  font-size: 40px;
+  line-height: normal;
+  position: absolute;
+  font-family: "Kokoro-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.slide .rectangle-2 {
+  position: absolute;
+  width: 1920px;
+  height: 1000px;
+  top: 145px;
+  left: 0;
+  background-color: #e2e2e2;
+}
+
+.slide .element-pictures {
+  position: absolute;
+  width: 921px;
+  height: 693px;
+  top: 298px;
+  left: 125px;
+  object-fit: cover;
+}
+
+.slide .view-2 {
+  position: absolute;
+  width: 547px;
+  height: 454px;
+  top: 348px;
+  left: 1204px;
+}
+
+.slide .text-wrapper-4 {
+  width: 441px;
+  top: 0;
+  left: 0;
+  color: #000000;
+  font-size: 50px;
+  line-height: normal;
+  position: absolute;
+  font-family: "Kokoro-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.slide .text-wrapper-5 {
+  position: absolute;
+  width: 426px;
+  top: 88px;
+  left: 0;
+  font-family: "Kokoro-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.slide .p {
+  position: absolute;
+  width: 541px;
+  top: 178px;
+  left: 0;
+  font-family: "Kokoro-Regular", Helvetica;
+  font-weight: 400;
+  color: #2d2d2d;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.slide .overlap {
+  height: 2609px;
+  top: 1145px;
+  position: absolute;
+  width: 1920px;
+  left: 0;
+}
+
+.slide .rectangle-3 {
+  position: absolute;
+  width: 1920px;
+  height: 1346px;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+}
+
+.slide .text-wrapper-6 {
+  top: 48px;
+  left: 794px;
+  color: white;
+  font-size: 50px;
+  line-height: normal;
+  position: absolute;
+  font-family: "Kokoro-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.slide .img {
+  position: absolute;
+  width: 555px;
+  height: 397px;
+  top: 207px;
+  left: 161px;
+  object-fit: cover;
+}
+
+.slide .element-2 {
+  position: absolute;
+  width: 635px;
+  height: 397px;
+  top: 206px;
+  left: 1124px;
+  object-fit: cover;
+}
+
+.slide .image {
+  width: 594px;
+  top: 809px;
+  left: 1165px;
+  position: absolute;
+  height: 328px;
+  object-fit: cover;
+}
+
+.slide .rectangle-4 {
+  position: absolute;
+  width: 1920px;
+  height: 1113px;
+  top: 1336px;
+  left: 0;
+  background-color: #e2e2e2;
+}
+
+.slide .element-3 {
+  width: 516px;
+  top: 1610px;
+  left: 128px;
+  color: var(--x);
+  font-size: 32px;
+  line-height: 38.4px;
+  position: absolute;
+  font-family: "Kokoro-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.slide .text-wrapper-7 {
+  width: 465px;
+  top: 1517px;
+  left: 128px;
+  color: #000000;
+  font-size: 50px;
+  line-height: 60px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Kokoro-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.slide .text-wrapper-8 {
+  width: 426px;
+  top: 1499px;
+  left: 800px;
+  color: #000000;
+  font-size: 50px;
+  line-height: normal;
+  position: absolute;
+  font-family: "Kokoro-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.slide .text-wrapper-9 {
+  width: 404px;
+  top: 1610px;
+  left: 800px;
+  color: var(--x);
+  font-size: 32px;
+  line-height: normal;
+  position: absolute;
+  font-family: "Kokoro-Regular", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.slide .rectangle-5 {
+  position: absolute;
+  width: 415px;
+  height: 68px;
+  top: 1520px;
+  left: 1351px;
+  background-color: #d9d9d9;
+}
+
+.slide .rectangle-6 {
+  position: absolute;
+  width: 415px;
+  height: 68px;
+  top: 1642px;
+  left: 1351px;
+  background-color: #d9d9d9;
+}
+
+.slide .rectangle-7 {
+  position: absolute;
+  width: 415px;
+  height: 235px;
+  top: 1749px;
+  left: 1351px;
+  background-color: #d9d9d9;
+}
+
+.slide .rectangle-8 {
+  position: absolute;
+  width: 415px;
+  height: 85px;
+  top: 2038px;
+  left: 1351px;
+  background-color: #040000;
+}
+
+.slide .rectangle-9 {
+  position: absolute;
+  width: 1920px;
+  height: 165px;
+  top: 2444px;
+  left: 0;
+  background-color: #000000;
+}
+
+.slide .element-4 {
+  top: 2502px;
+  left: 128px;
+  position: absolute;
+  width: 460px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.slide .image-2 {
+  width: 712px;
+  top: 824px;
+  left: 161px;
+  position: absolute;
+  height: 328px;
+  object-fit: cover;
+}
+
+.slide .text-wrapper-10 {
+  position: absolute;
+  top: 2488px;
+  left: 1157px;
+  font-family: "Kokoro-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+input[type="name" i] {
+  writing-mode: horizontal-tb !important;
+  padding-block: 1px;
+  padding-inline: 2px;
+  width: 415px;
+  height: 70px;
+  background-color: darkgray;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: black;
+}
+input[type="mail" i] {
+  writing-mode: horizontal-tb !important;
+  padding-block: 1px;
+  padding-inline: 2px;
+  width: 415px;
+  height: 70px;
+  background-color: darkgray;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: black;
+}
+textarea {
+  background-color: darkgray;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: black;
+}
+button {
+ height: 85px;
+ width: 415px;
+background-color: black;
+color: white;
+font-size: 25px;
+}
+a {
+text-decoration: none;
+color: white;
+}
+input[type="text" i] {
+  writing-mode: horizontal-tb !important;
+  padding-block: 1px;
+  padding-inline: 2px;
+  width: 415px;
+  height: 235px;
+  background-color: darkgray;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: black;
+}
